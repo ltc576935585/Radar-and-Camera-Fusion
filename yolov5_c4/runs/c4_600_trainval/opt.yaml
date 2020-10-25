@@ -1,0 +1,22 @@
+adam: false
+batch_size: 24
+bucket: ''
+cache_images: false
+cfg: ./models/yolov5s_c4.yaml
+data: ./data/v1.0-trainval.yaml
+device: '0'
+epochs: 600
+evolve: false
+img_size:
+- 640
+- 640
+multi_scale: false
+name: ''
+noautoanchor: false
+nosave: false
+notest: false
+rect: false
+resume: false
+single_cls: false
+weights: ''
+hyp: null

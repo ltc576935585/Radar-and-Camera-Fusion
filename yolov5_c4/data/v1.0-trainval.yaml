@@ -1,0 +1,36 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Download command: bash ./data/get_voc.sh
+# Train command: python train.py --data voc.yaml
+# Dataset should be placed next to yolov5 folder:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+# train and val datasets (image directory or *.txt file with image paths)
+train: /media/ltc/F/Adatasets/nuscense/data/train_val/images/train/
+val: /media/ltc/F/Adatasets/nuscense/data/train_val/images/val/
+test: /media/ltc/F/Adatasets/nuscense/data/train_val/images/train/
+##/media/ltc/F/Adatasets/nuscense/data 是data dir path
+# number of classes
+nc: 17
+
+# class names
+names: [
+        'animal',
+        'human',
+        'mo.barrier',
+        'mo.debris',
+        'mo.pushable_pullable',
+        'mo.trafficcone',
+        'static_object.bicycle_rack',
+        'bicycle',
+        'bus.bendy',
+        'bus.rigid',
+        'car',
+        'construction',
+        'emergency.ambulance',
+        'emergency.police',
+        'motorcycle',
+        'trailer',
+        'truck'
+]
